@@ -27,12 +27,12 @@ public class CarItemRepositoryTest  {
     @Test
     public void testAddOneCartItem() {
         CartItem cartItem = new CartItem();
-        Product product = entityManager.find(Product.class, 50);
-        Customer customer = entityManager.find(Customer.class,1);
+        Product product = entityManager.find(Product.class, 21);
+        Customer customer = entityManager.find(Customer.class,56);
 
         cartItem.setProduct(product);
         cartItem.setCustomer(customer);
-        cartItem.setQuantity(5);
+        cartItem.setQuantity(53);
 
         CartItem cartItem1 = cartItemRepository.save(cartItem);
 
