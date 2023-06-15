@@ -5,8 +5,6 @@ import at.diefirma.ShoppingCartApp.entity.Customer;
 import at.diefirma.ShoppingCartApp.sevice.CustomerService;
 import at.diefirma.ShoppingCartApp.sevice.ShoppingCartService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,7 +20,7 @@ public class ShoppingCartController {
     @Autowired
     private CustomerService customerService;
 
-    /* todo @AuthenticationPrincipal Authentication authentication dann auth. Person suchen via PS und dort reingeben*/
+
     @GetMapping("/cart")
     public String showShoppingCart(Model model,  Customer customer) {
 

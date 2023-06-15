@@ -1,6 +1,7 @@
-package com.example.application.views.helloworld;
+package at.diefirma.ShoppingCartApp.application.views.helloworld;
 
-import com.example.application.views.MainLayout;
+import at.diefirma.ShoppingCartApp.application.views.MainLayout;
+
 import com.vaadin.flow.component.HasComponents;
 import com.vaadin.flow.component.HasStyle;
 import com.vaadin.flow.component.html.H2;

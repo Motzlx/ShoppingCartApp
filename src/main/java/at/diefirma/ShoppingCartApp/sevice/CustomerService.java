@@ -1,7 +1,7 @@
 package at.diefirma.ShoppingCartApp.sevice;
 
 import at.diefirma.ShoppingCartApp.entity.Customer;
-import org.springframework.security.core.Authentication;
+
 import org.springframework.stereotype.Service;
 
 @Service

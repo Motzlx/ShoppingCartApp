@@ -1,18 +1,19 @@
 package at.diefirma.ShoppingCartApp.application.views;
 
-import com.example.application.components.appnav.AppNav;
+import at.diefirma.ShoppingCartApp.application.components.appnav.AppNav;
+import at.diefirma.ShoppingCartApp.application.views.helloworld.HelloWorldView;
 import com.example.application.components.appnav.AppNavItem;
-import com.example.application.views.helloworld.HelloWorldView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Header;
+import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.theme.lumo.LumoUtility;
-import org.vaadin.lineawesome.LineAwesomeIcon;
+
 
 /**
  * The main view is a top-level placeholder for other views.
@@ -54,7 +55,7 @@ public class MainLayout extends AppLayout {
         // SideNav component.
         AppNav nav = new AppNav();
 
-        nav.addItem(new AppNavItem("Hello World", HelloWorldView.class, LineAwesomeIcon.TH_LIST_SOLID.create()));
+        nav.addItem(new AppNavItem("Hello World", HelloWorldView.class));
 
         return nav;
     }
